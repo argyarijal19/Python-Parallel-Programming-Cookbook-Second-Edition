@@ -5,7 +5,7 @@ import multiprocessing
 
 if __name__ == "__main__":
     start_time = time.time()
-    size = 10000000   
+    size = 1000
     procs = 10   
     jobs = []
     for i in range(0, procs):
@@ -22,4 +22,6 @@ if __name__ == "__main__":
 
     print ("List processing complete.")
     end_time = time.time()
+    print(jobs)
+    print(j)
     print("multiprocesses time=", end_time - start_time)
